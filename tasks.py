@@ -327,9 +327,9 @@ print(f"Статус поездки 2: {travel_status_2}")
 def generate_report(student_name, test_score, total_score, passing_score):
     percentage_score = (test_score / total_score) * 100
     if percentage_score < passing_score:
-        return f"{student_name} не сдал. Процент набранного балла: {percentage_score:.2f}%"
+        return f"{student_name} не сдал. Процент набранного балла: {percentage_score}%"
     else:
-        return f"{student_name} сдал. Процент набранного балла: {percentage_score:.2f}%"
+        return f"{student_name} сдал. Процент набранного балла: {percentage_score}%"
 
 print(generate_report("Иван", 45, 60, 50))  # Иван сдал. Процент набранного балла: 75.00%
 print(generate_report("Мария", 30, 60, 50))  # Мария не сдала. Процент набранного балла: 50.00%
